@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG-MASSAGGI - Massaggi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10e0d9739d.js" crossorigin="anonymous"></script>
+    <style>
+        @media (max-width: 600px) {
+            #initBlock {
+                height: auto;
+                flex-direction: column;
+            }
+            #scrollImg {
+                height: 300px;
+                margin-top: 50px;
+            }
+            #titleMassage {
+                max-width: 100%;
+            }
+            .grid {
+                height: 100%;
+                margin-bottom: 100px;
+            }
+            .grid img:last-child {
+                display: none;
+            }
+            .item {
+                pointer-events: auto;
+            }
+            .item2W {
+                grid-column: span 3;
+            }
+            .item2H {
+                grid-column: span 2;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="barra" class="barraAll">
+            <div id="barraLogo">
+                <a href="./index.html"><img id="logo" src="./img/logo.png" alt="immagine logo"></a>
+                <i id="tastoNavbar" class="fa-solid fa-square-caret-down"></i>
+              </div>
+          <nav id="navbar" class="navbarAll">
+              <div><a class="first" href="./massage.html">MASSAGGI</a></div>
+              <div><a class="other" href="./course.html">CORSI</a></div>
+              <div><a class="other" href="#contatti">CONTATTI</a></div>
+              <div><a class="last" href="./aboutme.html">CHI SONO</a></div>
+          </nav>
+        </div>
+      </header>
+
+
+    <div id="back"><img src="./img/massaggio3.jpg" alt="massaggio"></div>
+    <div id="container">
+        <div id="initBlock">
+            <div id="scrollImg">
+                <img id="img5" src="./img/Massaggio.jpeg" alt="massaggio"></img>
+                <img id="img4" src="img/massaggio1.jpg" alt="massaggio1"></img>
+                <img id="img3" src="img/massaggio2.jpg" alt="massaggio2"></img>
+                <img id="img2" src="img/massaggio3.jpg" alt="massaggio3"></img>
+                <img id="img1" src="img/massaggio4.jpg" alt="massaggio4"></img>
+            </div>
+            <div id="titleMassage">
+                <h1>SCOPRI IL MASSAGGIO IDEALE PER IL TUO BENESSERE</h1>
+                <p>Concediti una pausa rigenerante dallo stress quotidiano, grazie ai nostri massaggi personalizzati, pensati per donarti sollievo e relax profondo.</p>
+            </div>
+        </div>
+        <div id="secondBlock">
+            <div class="grid">
+                <h2 class="item item3W">DECONTRATTURANTE</h2>
+                <p class="item item2W">Il massaggio decontratturante allevia le tensioni muscolari e le contratture con pressioni profonde e movimenti delicati. Favorisce il rilassamento e migliora la circolazione sanguigna, perfetto per chi vive con stress fisico e rigidità muscolare.</p>
+                <img class="item item2H" src="./img/Massaggio.jpeg" alt="massaggio">
+                <img class="item" src="./img/Massaggio.jpeg" alt="massaggio">
+                <img class="item" src="./img/Massaggio.jpeg" alt="massaggio">
+            </div>
+            <div class="grid">
+                <h2 class="item item3W">DEFATICANTE</h2>
+                <p class="item item2W">Rigenera corpo e mente con il nostro massaggio defaticante, pensato per alleviare lo stress e rilassare i muscoli tesi. Un trattamento rivitalizzante per affrontare le sfide quotidiane con energia rinnovata.</p>
+                <img class="item item2H" src="./img/massaggio1.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio1.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio1.jpg" alt="massaggio">
+            </div>
+            <div class="grid">
+                <h2 class="item item3W">NALU NUI</h2>
+                <p class="item item2W">Esplora una profonda connessione con te stesso attraverso il nostro massaggio Nalu Nui, un'esperienza unica che combina movimenti fluidi e rilassanti per liberare le tensioni e rinnovare lo spirito.</p>
+                <img class="item item2H" src="./img/massaggio2.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio2.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio2.jpg" alt="massaggio">
+            </div>
+            <div class="grid">
+                <h2 class="item item3W">VISAGE</h2>
+                <p class="item item2W">Ritrova il tuo splendore interiore con il massaggio Visage, un trattamento delicato che lenisce la pelle e rilassa i muscoli del viso. Ideale per una sensazione di benessere e luminosità.</p>
+                <img class="item item2H" src="./img/massaggio3.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio3.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio3.jpg" alt="massaggio">
+            </div>
+            <div class="grid">
+                <h2 class="item item3W">GAMBE LIGHT</h2>
+                <p class="item item2W">Libera le tue gambe da pesantezza e stanchezza con il nostro massaggio Gambe Light, progettato per migliorare la circolazione e ridurre la sensazione di gonfiore. Un trattamento energizzante per gambe leggere e vitali.</p>
+                <img class="item item2H" src="./img/massaggio4.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio4.jpg" alt="massaggio">
+                <img class="item" src="./img/massaggio4.jpg" alt="massaggio">
+            </div>
+        </div>
+        <section id="contatti">
+            <div class="sfondoAll">
+              <h1>PRENOTA IL TUO MASSAGGIO</h1>
+              <div id="contacts">
+                <a href="https://www.facebook.com/federicogostimassaggi/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><span>FG - MASSAGGI</span>
+                <a href="https://www.instagram.com/fg_massaggi/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a><span> FG_MASSAGGI</span>
+                <a href="https://www.tiktok.com/@fg_massaggi" target="_blank"><i class="fa-brands fa-tiktok"></i></a><span> FG_MASSAGGI</span>
+                <a href="https://www.linkedin.com/in/federico-gosti-4b0444185/?originalSubdomain=it" target="_blank"><i class="fa-brands fa-linkedin"></i></a><span> FEDERICO GOSTI</span>
+                <i class="fa-brands fa-square-whatsapp"></i><span> 3886432373</span>
+                <i class="fa-solid fa-square-envelope"></i><span> FG_MASSAGGI@GMAIL.COM</span>
+              </div>
+            </div>
+          </section>
+        <footer>
+            <p>&copy; 2024 FG-MASSAGGI di Federico Gosti - P.IVA: 01234567890</p>
+        </footer>
+
+    <script>
+    let counter = 1;
+    let interval = setInterval(function() {
+        document.getElementById("img" + counter).classList.add("trasparenza");
+        counter ++;
+        if (counter > 5) {
+            counter = 1;
+            document.getElementById("img1").classList.remove("trasparenza");
+            document.getElementById("img2").classList.remove("trasparenza");
+            document.getElementById("img3").classList.remove("trasparenza");
+            document.getElementById("img4").classList.remove("trasparenza");
+            document.getElementById("img5").classList.remove("trasparenza");
+        };
+    }, 3000);
+
+        
+    let tastoNavbar = document.querySelector("#tastoNavbar");
+    let navbar = document.querySelector("#navbar");
+    tastoNavbar.addEventListener("click", () => {
+        tastoNavbar.classList.toggle("toggle");
+    })
+    tastoNavbar.addEventListener("click", () => {
+        navbar.classList.toggle("toggle");
+    })
+
+
+    let griglie = document.querySelectorAll(".grid");
+    griglie.forEach((griglia) => {
+        let immagini = griglia.querySelectorAll("img.item2H, img:not(.item2H)");
+        let img1 = immagini[0];
+        let img2 = immagini[1];
+        img1.addEventListener("click", () => {
+            img2.classList.remove("item2H");
+            img1.classList.add("item2H");
+        });
+        img2.addEventListener("click", () => {
+            img1.classList.remove("item2H");
+            img2.classList.add("item2H");
+        });
+    });
+    </script>
+</body>
+</html>
