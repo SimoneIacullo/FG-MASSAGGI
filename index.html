@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG-MASSAGGI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10e0d9739d.js" crossorigin="anonymous"></script>
+    <style>
+      @media (max-width: 600px) {
+        body {
+          background-color: #111;
+        }
+        #presentazione video {
+          position: relative;
+          height: auto;
+        }
+        #copertina {
+          z-index: 3;
+          position: absolute;
+          top: 0;
+          height: 45%;
+        }
+        .section {
+          display: none;
+        }
+        .sfondo {
+          background: #111;
+          flex-direction: column;
+        }
+        .left, .right {
+          height: 400px;
+        }
+        .right {
+          transform: translateX(-50px);
+        }
+        #reverse {
+          flex-direction: column-reverse;
+        }
+        .sfondo2 {
+          background: #111;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div id="barra">
+        <div id="barraLogo">
+          <a href="#presentazione"><img id="logo" src="./img/logo.png" alt="immagine logo"></a>
+          <i id="tastoNavbar" class="fa-solid fa-square-caret-down"></i>
+        </div>
+        <nav id="navbar">
+            <div><a class="first" href="./massage.html">MASSAGGI</a></div>
+            <div><a class="other" href="./course.html">CORSI</a></div>
+            <div><a class="other" href="#contatti">CONTATTI</a></div>
+            <div><a class="last" href="./aboutme.html">CHI SONO</a></div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="presentazione">
+      <video src="./img/Video.mov" autoplay muted loop></video>
+      <div id="copertina"></div>
+      <div class="section watch"></div>
+    </section>
+    <section id="navigazione">
+      <div class="sfondo">
+        <div id="massage" class="left card watch"><a href="./massage.html"></a></div>
+        <div id="description1" class="right description watch">
+          <h3>MASSAGGI</h3>
+          <p>Esplora il nostro menu di massaggi terapeutici e lasciati trasportare in un viaggio sensoriale che rigenera il Corpo e lenisce l'Anima.</p>
+          <p><a href="./massage.html">Scopri di più ></a></p>
+        </div>
+      </div>
+      <div id="reverse" class="sfondo">
+        <div id="description2" class="left description watch">
+          <h3>AMBIENTE</h3>
+          <p>Scopri l'Incantevole Santuario del Benessere: Dove Ogni Massaggio Diventa un Viaggio Rigenerante per il Corpo e l'Anima.</p>
+          <p><a href="./ambient.html">Scopri di più ></a></p>
+        </div>
+        <div id="ambient" class="right card watch"><a href="./ambient.html"></a></div>
+      </div>
+      <div class="sfondo">
+        <div id="course" class="left card watch"><a href="./course.html"></a></div>
+        <div id="description3" class="right description watch">
+          <h3>CORSI</h3>
+          <p>Esplora la nostra selezione di Corsi: Un viaggio formativo nel mondo dei massaggi, progettato per offrire conoscenze approfondite e competenze pratiche agli aspiranti massaggiatori.</p>
+          <p><a href="./course.html">Scopri di più ></a></p>
+        </div>
+      </div>
+    </section>
+    <section id="contatti">
+      <div class="sfondo2">
+        <h1>CONTATTI</h1>
+        <div id="contacts">
+          <a href="https://www.facebook.com/federicogostimassaggi/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><span>FG - MASSAGGI</span>
+          <a href="https://www.instagram.com/fg_massaggi/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a><span> FG_MASSAGGI</span>
+          <a href="https://www.tiktok.com/@fg_massaggi" target="_blank"><i class="fa-brands fa-tiktok"></i></a><span> FG_MASSAGGI</span>
+          <a href="https://www.linkedin.com/in/federico-gosti-4b0444185/?originalSubdomain=it" target="_blank"><i class="fa-brands fa-linkedin"></i></a><span> FEDERICO GOSTI</span>
+          <i class="fa-brands fa-square-whatsapp"></i><span> 3886432373</span>
+          <i class="fa-solid fa-square-envelope"></i><span> FG_MASSAGGI@GMAIL.COM</span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 FG-MASSAGGI di Federico Gosti - P.IVA: 01234567890</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
