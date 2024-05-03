@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG-MASSAGGI - Corsi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10e0d9739d.js" crossorigin="anonymous"></script>
+    <style>
+      @media (max-width: 600px) {
+        #backCorsi {
+          display: none;
+        }
+        #initCorsi {
+          height: 100%;
+        }
+        #initCorsi h1, #initCorsi p {
+          text-align: center;
+          margin: 10px;
+          max-width: 100%;
+        }
+        #initCorsi h1 {
+          margin: 100px 0 10px 0;
+          font-size: 28px;
+          background-image: linear-gradient(90deg, #eee 0% 33%, transparent 100%), url(./img/Corso.jpeg);
+          background-size: contain;
+          background-position: right;
+        }
+        .spiegCorsi {
+          flex-direction: column;
+        }
+        #contImgCorsi {
+          min-width: 300px;
+          min-height: 300px;
+          margin: 50px 0 50px 0;
+        }
+        #contDescrCorsi {
+          width: 100%;
+        }
+        #videoCorsi {
+          width: 80%;
+        }
+        #testimonianze i {
+          margin: 10px;
+          font-size: 30px;
+        }
+      }
+    </style>
+</head>
+<body>
+  <header id="header">
+    <div id="barra" class="barraAll">
+      <div id="barraLogo">
+        <a href="./index.html"><img id="logo" src="./img/logo.png" alt="immagine logo"></a>
+        <i id="tastoNavbar" class="fa-solid fa-square-caret-down"></i>
+      </div>
+      <nav id="navbar" class="navbarAll">
+          <div><a class="first" href="./massage.html">MASSAGGI</a></div>
+          <div><a class="other" href="./course.html">CORSI</a></div>
+          <div><a class="other" href="#contatti">CONTATTI</a></div>
+          <div><a class="last" href="./aboutme.html">CHI SONO</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="initCorsi">
+    <div id="backCorsi"></div>
+    <div div="titoloCorsi">
+      <h1>VUOI DIVENTARE ANCHE TU MASSAGGIATORE?</h1>
+      <p>Esplora la Nostra Selezione di Corsi di Massaggio per Acquisire Nuove Competenze e Migliorare la Tua Carriera Professionale nel Settore del Benessere.</p>
+      <p class="info"><a href="#contatti"> Per info e costi</a></p>
+    </div>
+  </section>
+
+  <section class="spiegCorsi">
+    <div id="contImgCorsi">
+      <img id="imgCorsi1" src="./img/Corso.jpeg" alt="corso1">
+      <img id="imgCorsi2" src="./img/Corso.jpeg" alt="corso2">
+    </div>
+    <div id="contDescrCorsi">
+      <h2>IL CORSO</h2>
+      <p>Tre giorni di formazione sulle varie tecniche di massaggio</p>
+    </div>
+  </section>
+  <section class="spiegCorsi">
+    <div id="videoCorsi">
+      <video src="./img/Video.mov"  autoplay muted loop></video>
+    </div>
+    <div id="contDescrCorsi">
+      <h2>IL CORSO 2</h2>
+      <p>Tre giorni di formazione sulle varie tecniche di massaggio</p>
+    </div>
+  </section>
+  <section id="review">
+    <h1>ESPERIENZE CONDIVISE</h1>
+    <div id="testimonianze">
+      <i id="backButton" class="fa-solid fa-square-caret-left"></i>
+      <div id="videoGallery">
+        <div class="videoBlocco">
+          <div><video src="./img/vertical.mp4" controls></video></div>
+          <div><video src="./img/vertical.mp4" controls></video></div>
+          <div><video src="./img/vertical.mp4" controls></video></div>
+          <div><video src="./img/vertical.mp4" controls></video></div>
+          <div><video src="./img/vertical.mp4" controls></video></div>
+          <div><video src="./img/vertical.mp4" controls></video></div>
+        </div>
+      </div>
+      <i id="nextButton" class="fa-solid fa-square-caret-right"></i>
+    </div>
+  </section>
+
+  <section id="contatti" class="contattiCorso">
+    <div class="sfondoAll">
+      <h1>INFO E COSTI CORSI</h1>
+      <div id="contacts"  class="contattiCorso">
+        <a href="https://www.facebook.com/federicogostimassaggi/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><span>FG - MASSAGGI</span>
+        <a href="https://www.instagram.com/fg_massaggi/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a><span> FG_MASSAGGI</span>
+        <a href="https://www.tiktok.com/@fg_massaggi" target="_blank"><i class="fa-brands fa-tiktok"></i></a><span> FG_MASSAGGI</span>
+        <a href="https://www.linkedin.com/in/federico-gosti-4b0444185/?originalSubdomain=it" target="_blank"><i class="fa-brands fa-linkedin"></i></a><span> FEDERICO GOSTI</span>
+        <i class="fa-brands fa-square-whatsapp"></i><span> 3886432373</span>
+        <i class="fa-solid fa-square-envelope"></i><span> FG_MASSAGGI@GMAIL.COM</span>
+      </div>
+    </div>
+  </section>
+<footer>
+    <p>&copy; 2024 FG-MASSAGGI di Federico Gosti - P.IVA: 01234567890</p>
+</footer>
+<script>
+  let scrollGallery = document.querySelector("#videoGallery");
+  let back = document.querySelector("#backButton");
+  let next = document.querySelector("#nextButton");
+  back.addEventListener("click", () => {
+    scrollGallery.scrollLeft -= 300;
+  })
+  next.addEventListener("click", () => {
+    scrollGallery.scrollLeft += 300;
+  })
+
+  let tastoNavbar = document.querySelector("#tastoNavbar");
+  let navbar = document.querySelector("#navbar");
+  tastoNavbar.addEventListener("click", () => {
+      tastoNavbar.classList.toggle("toggle");
+      navbar.classList.toggle("toggle");
+  })
+</script>
+</body>
+</html>
