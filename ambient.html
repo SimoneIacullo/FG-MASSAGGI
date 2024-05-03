@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG-MASSAGGI - Ambiente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10e0d9739d.js" crossorigin="anonymous"></script>
+    <style>
+      @media (max-width: 600px) {
+        #titoloAmb {
+          height: auto;
+          max-width: 100%;
+        }
+        #titoloAmb h1 {
+          font-size: 28px;
+        }
+        .titolo1 {
+          margin-top: 100px;
+        }
+        #galleryAmb {
+          grid-template-columns: 1fr 1fr;
+          margin-top: 100px;
+        }
+      }
+    </style>
+</head>
+<body>
+  <header id="header">
+    <div id="barra" class="barraAll">
+      <div id="barraLogo">
+        <a href="./index.html"><img id="logo" src="./img/logo.png" alt="immagine logo"></a>
+        <i id="tastoNavbar" class="fa-solid fa-square-caret-down"></i>
+      </div>
+      <nav id="navbar" class="navbarAll">
+          <div><a class="first" href="./massage.html">MASSAGGI</a></div>
+          <div><a class="other" href="./course.html">CORSI</a></div>
+          <div><a class="other" href="#contatti">CONTATTI</a></div>
+          <div><a class="last" href="./aboutme.html">CHI SONO</a></div>
+      </nav>
+    </div>
+  </header>
+  <div id="back"><img src="./img/Ambiente.jpeg" alt="massaggio"></div>
+  <div id="container">
+    <section>
+      <div id="titoloAmb">
+        <h1 class="titolo1">SCOPRI L'ARMONIA:</h1>
+        <h1 class="titolo2">IL NOSTRO SPAZIO DI MASSAGGIO PER UN RELAX TOTALE</h1>
+        <p class="paragrafo1">Il massaggio richiede un ambiente che porti energia positiva e relax, vissuto in simbiosi con l'esperienza del trattamento. Non solo scioglierà i vostri muscoli, ma scioglierà e allieterà anche il vostro stress.</p>
+        <p class="paragrafo2">Immergetevi in un'atmosfera di serenità e benessere, dove ogni dettaglio è curato per offrirvi un'esperienza di relax totale, adatta a rigenerare mente, corpo e spirito.</p>
+      </div>
+    </section>
+    <section id="galleryAmb">
+      <img class="galleryImg" src="./img/zen1.jpg" alt="">
+      <img class="galleryImg" src="./img/zen2.jpg" alt="">
+      <img class="galleryImg" src="./img/zen3.jpg" alt="">
+      <img class="galleryImg" src="./img/zen2.jpg" alt="">
+      <img class="galleryImg" src="./img/zen3.jpg" alt="">
+      <img class="galleryImg" src="./img/zen1.jpg" alt="">
+    </section>
+    <section id="contatti">
+      <div class="sfondoAll">
+        <h1>VIVI LA TUA ESPERIENZA DI RELAX</h1>
+        <div id="contacts">
+          <a href="https://www.facebook.com/federicogostimassaggi/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><span>FG - MASSAGGI</span>
+          <a href="https://www.instagram.com/fg_massaggi/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a><span> FG_MASSAGGI</span>
+          <a href="https://www.tiktok.com/@fg_massaggi" target="_blank"><i class="fa-brands fa-tiktok"></i></a><span> FG_MASSAGGI</span>
+          <a href="https://www.linkedin.com/in/federico-gosti-4b0444185/?originalSubdomain=it" target="_blank"><i class="fa-brands fa-linkedin"></i></a><span> FEDERICO GOSTI</span>
+          <i class="fa-brands fa-square-whatsapp"></i><span> 3886432373</span>
+          <i class="fa-solid fa-square-envelope"></i><span> FG_MASSAGGI@GMAIL.COM</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+      <p>&copy; 2024 FG-MASSAGGI di Federico Gosti - P.IVA: 01234567890</p>
+  </footer>
+  <script>
+    let tastoNavbar = document.querySelector("#tastoNavbar");
+    let navbar = document.querySelector("#navbar");
+    tastoNavbar.addEventListener("click", () => {
+        tastoNavbar.classList.toggle("toggle");
+    })
+    tastoNavbar.addEventListener("click", () => {
+        navbar.classList.toggle("toggle");
+    })
+  </script>
+</body>
+</html>
